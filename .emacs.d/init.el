@@ -9,4 +9,5 @@
 
 ;; Haskell Mode configuration (haskell-mode must be
 ;; installed through the package manager though
-(load-file "haskell-mode.el")
+(load-file "~/.emacs.d/haskell-mode.el")
+
