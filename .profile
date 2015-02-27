@@ -25,5 +25,7 @@ fi
 
 ## customization
 
+PATH="$HOME/.cabal/bin:$PATH"
+
 export ALTERNATE_EDITOR=""
 export EDITOR='emacsclient -c'
