@@ -16,7 +16,16 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
+
+(unless (package-installed-p 'clojure-mode)
+  (package-install 'clojure-mode))
+
+(unless (package-installed-p 'cider)
+  (package-install 'cider))
+
+(unless (package-installed-p 'haskell-mode)
+  (package-install 'haskell-mode))
+
 ;; Haskell Mode configuration (haskell-mode must be
 ;; installed through the package manager though
 (load-file "~/.emacs.d/haskell-mode.el")
-
