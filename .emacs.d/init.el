@@ -29,3 +29,18 @@
 ;; Haskell Mode configuration (haskell-mode must be
 ;; installed through the package manager though
 (load-file "~/.emacs.d/haskell-mode.el")
+
+;; set SBCL as SLIME lisp
+(setq inferior-lisp-program (executable-find "sbcl"))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
