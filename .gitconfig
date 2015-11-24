@@ -3,3 +3,6 @@
 	name = Michael Hartl
 [push]
 	default = simple
+[branch]
+	autosetuprebase = always
+
