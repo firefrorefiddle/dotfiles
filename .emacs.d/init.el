@@ -56,3 +56,11 @@
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
+(unless (package-installed-p 'scala-mode2)
+  (package-refresh-contents) (package-install 'scala-mode2))
+
+(add-to-list 'auto-mode-alist '("\\.org.txt\\'" . org-mode))
