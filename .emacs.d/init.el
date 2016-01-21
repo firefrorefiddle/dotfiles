@@ -11,6 +11,8 @@
 (require 'package) ;; You might already have this line
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
+
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -55,3 +57,7 @@
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+(unless (package-installed-p 'scala-mode2)
+  (package-refresh-contents) (package-install 'scala-mode2))
+
+(add-to-list 'auto-mode-alist '("\\.org.txt\\'" . org-mode))
