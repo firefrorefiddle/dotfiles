@@ -28,4 +28,8 @@ fi
 PATH="$HOME/.cabal/bin:$PATH"
 
 export ALTERNATE_EDITOR=""
-export EDITOR='emacsclient -c'
+export EDITOR=vi
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+export PATH=$PATH:$ORACLE_HOME/bin
